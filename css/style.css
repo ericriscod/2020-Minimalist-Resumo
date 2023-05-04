@@ -16,6 +16,13 @@ body {
   margin: 0;
 }
 
+.vector button {
+  padding: 0;
+  border: transparent;
+  border-radius: 50px;
+  background: transparent;
+}
+
 h1 {
   font-family: 'Inter';
   font-style: normal;
@@ -75,12 +82,12 @@ h2 {
   margin: 0;
 }
 
-.contact address{
+.contact address {
   text-align: start;
   color: var(--color-grey-30);
 }
 
-.contact a{
+.contact a {
   text-decoration: none;
   color: var(--color-grey-30);
 }
@@ -283,6 +290,11 @@ footer p {
     margin: 0 136px 0 48px;
   }
 
+  .vector button{
+    position: relative;
+    z-index: 999;
+  }
+
   main.container {
     margin: 0;
     position: relative;
@@ -390,6 +402,10 @@ footer p {
     margin-bottom: 50vh;
   }
 
+  .projects li a:hover {
+    color: var(--color-grey-60);
+  }
+
   .projects h1 {
     font-family: Inter;
     font-size: 24px;
@@ -446,11 +462,10 @@ footer p {
     padding: 0;
     position: absolute;
     left: 1rem;
-
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   header.container {
     margin: 0;
     border: 1px solid none;
@@ -472,8 +487,16 @@ footer p {
     height: 400px;
   }
 
-  .name-tile-contect {
+  .name-title-contact {
+    padding: 5px;
+    margin-right: 15rem;
     position: relative;
+    height: 100%;
+  }
+
+  .container-contact{
+    display: flex;
+    flex-wrap: wrap;
     height: 100%;
   }
 
@@ -487,9 +510,8 @@ footer p {
 
   .contact {
     position: absolute;
-    width: 18%;
+    left: 69rem;
     height: 96px;
-    left: 63rem;
     top: 18rem;
   }
 
@@ -497,15 +519,15 @@ footer p {
     text-align: end;
   }
 
-  .contact address{
+  .contact address {
     position: relative;
     text-align: end;
     z-index: 99;
-    
+
     color: var(--color-grey-30);
   }
-  
-  .contact a{
+
+  .contact a {
     position: relative;
     z-index: 99;
     text-decoration: none;
