@@ -6,7 +6,7 @@
   --color-grey-30: rgba(255, 255, 255, 0.3);
   --color-white: #fff;
 
-  --container_1200: 0 3rem 0 42em ;
+  --container_1200: 0 3rem 0 42em;
 }
 
 /*-----------------Geral-----------------*/
@@ -73,6 +73,16 @@ h2 {
 
 .contact p {
   margin: 0;
+}
+
+.contact address{
+  text-align: start;
+  color: var(--color-grey-30);
+}
+
+.contact a{
+  text-decoration: none;
+  color: var(--color-grey-30);
 }
 
 .title {
@@ -431,14 +441,21 @@ footer p {
     letter-spacing: 0em;
     text-align: justified;
   }
+
+  footer p {
+    padding: 0;
+    position: absolute;
+    left: 1rem;
+
+  }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   header.container {
     margin: 0;
     border: 1px solid none;
     position: relative;
-    padding: var(--container_1200)
+    padding: var(--container_1200);
   }
 
   main.container {
@@ -470,15 +487,29 @@ footer p {
 
   .contact {
     position: absolute;
-    width: 150px;
+    width: 18%;
     height: 96px;
     left: 63rem;
-    top: 16rem;
+    top: 18rem;
   }
 
   .contact p {
-    margin-top: 2rem;
     text-align: end;
+  }
+
+  .contact address{
+    position: relative;
+    text-align: end;
+    z-index: 99;
+    
+    color: var(--color-grey-30);
+  }
+  
+  .contact a{
+    position: relative;
+    z-index: 99;
+    text-decoration: none;
+    color: var(--color-grey-30);
   }
 
   .logo img {
@@ -559,9 +590,8 @@ footer p {
 
   .projects {
     position: absolute;
-    left: -145vh;
-    margin-left: 300px;
-    margin-bottom: 50vh;
+    top: 61rem;
+    margin-left: -38rem;
   }
 
   .projects h1 {
@@ -574,7 +604,6 @@ footer p {
   }
 
   .projects li a {
-    margin-top: 1rem;
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
@@ -583,6 +612,10 @@ footer p {
     text-align: left;
 
     color: var(--color-grey-30);
+  }
+
+  .projects li a:hover {
+    color: var(--color-grey-60);
   }
 
   .experience {
@@ -619,8 +652,8 @@ footer p {
   footer p {
     padding: 0;
     position: absolute;
-    margin: var(--container_1200) ;
-    left: 9vh;
+    margin: var(--container_1200);
+    left: 55px;
     max-width: 584px;
   }
 }
