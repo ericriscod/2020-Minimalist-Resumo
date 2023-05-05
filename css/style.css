@@ -57,6 +57,7 @@ h2 {
   height: 280px;
 }
 
+
 .name-title {
   position: absolute; /* Define a posição absoluta para o elemento filho */
   bottom: 0;
@@ -83,7 +84,7 @@ h2 {
 }
 
 .contact address {
-  text-align: start;
+  text-align: end;
   color: var(--color-grey-30);
 }
 
@@ -280,6 +281,12 @@ footer p {
   color: var(--color-grey-30);
 }
 
+/* trocar tema*/
+body .theme-on{
+    filter: invert();
+}
+
+
 @media (min-width: 376px) {
   footer .container {
     margin: 0 136px 0 48px;
@@ -327,6 +334,12 @@ footer p {
   .contact p {
     text-align: start;
   }
+
+  .contact address {
+    text-align: start;
+    color: var(--color-grey-30);
+  }
+
   .logo img {
     position: absolute;
     top: 0;
